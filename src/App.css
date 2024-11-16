@@ -1,38 +1,47 @@
-.App {
-  text-align: center;
+.board {
+  display: inline-block;
+  margin: 20px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.board-row {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.square {
+  width: 60px;
+  height: 60px;
+  font-size: 24px;
+  font-weight: bold;
+  margin: 5px;
+  cursor: pointer;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.winner {
+  background-color: red; /* Change background color to red for winning squares */
+  color: white; /* Optional: Change text color for better visibility */
+}
+
+.status {
+  margin-bottom: 20px;
+}
+
+.reset {
+  margin-top: 20px;
+}
+.winner-message {
+  color: red;
+  font-size: 24px;
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+.square {
+  width: 60px;
+  height: 60px;
+  font-size: 24px;
+  margin: 5px;
+}
+
+.winner {
+  background-color: yellow; /* Highlight winning squares */
 }
